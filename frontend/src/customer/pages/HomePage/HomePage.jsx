@@ -8,12 +8,9 @@ import Navigation from '../../components/Navbar'
 const HomePage = () => {
   return (
     <div>
-        <Navigation/>
         <HomeCarousel/>
-        
         <ActivitySection />
         <HomePageSecondarySlider />
-        <Footer />
     </div>
   )
 }

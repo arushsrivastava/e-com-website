@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const STATUS_STEPS = ["Order placed", "Processing", "Shipped", "Delivered"];
 
-export default function OrderDetailsPage() {
+export default function OrderHistoryDetails() {
   const order = {
     id: "54879",
     placedOn: "March 22, 2021",

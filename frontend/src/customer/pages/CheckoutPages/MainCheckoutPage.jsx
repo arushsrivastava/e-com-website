@@ -90,7 +90,7 @@ export default function MainCheckoutPage() {
 
                 <Box sx={{ flex: "1 1 auto" }} />
 
-                {activeStep === steps.length - 1 && <button onClick={{}}
+                {activeStep === steps.length - 1 && <button onClick={() => navigate("/account/orders")}
                 className="text-blue-600 hover:underline hover:text-blue-800 ">
                 Go to order history
                 </button>}

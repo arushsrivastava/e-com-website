@@ -22,25 +22,25 @@ const Footer = () => {
       </div>
 
       {/* Footer main */}
-      <div className="bg-gray-800 text-white flex items-start justify-center gap-22 py-8">
+      <div className="bg-gray-800 text-white flex items-start justify-center px-2 lg:gap-[50px] text-[8px] lg:text-sm py-8">
         
-        <div className="flex flex-col text-left max-w-[130px]">
-          <h5 className="mb-2">Get to Know Us</h5>
+        <div className="flex flex-col text-left lg:max-w-[130px]">
+          <p className="mb-2">Get to Know Us</p>
           <a href="" style={linkStyle}>About Amazon</a>
           <a href="" style={linkStyle}>Careers</a>
           <a href="" style={linkStyle}>Press Releases</a>
           <a href="" style={linkStyle}>Amazon Science</a>
         </div>
 
-        <div className="flex flex-col text-left max-w-[130px]">
-          <h5 className="mb-2">Connect with Us</h5>
+        <div className="flex flex-col text-left lg:max-w-[130px]">
+          <p className="mb-2">Connect with Us</p>
           <a href="" style={linkStyle}>Facebook</a>
           <a href="" style={linkStyle}>Twitter</a>
           <a href="" style={linkStyle}>Instagram</a>
         </div>
 
-        <div className="flex flex-col text-left max-w-[220px]">
-          <h5 className="mb-2">Make Money with Us</h5>
+        <div className="flex flex-col text-left lg:max-w-[220px]">
+          <p className="mb-2">Make Money with Us</p>
           <a href="" style={linkStyle}>Sell on Amazon</a>
           <a href="" style={linkStyle}>Sell under Amazon Accelerator</a>
           <a href="" style={linkStyle}>Protect and Build Your Brand</a>
@@ -52,8 +52,8 @@ const Footer = () => {
           <a href="" style={linkStyle}>Amazon Pay on Merchants</a>
         </div>
 
-        <div className="flex flex-col text-left max-w-[220px]">
-          <h5 className="mb-2">Let Us Help You</h5>
+        <div className="flex flex-col text-left lg:max-w-[220px]">
+          <p className="mb-2">Let Us Help You</p>
           <a href="" style={linkStyle}>Your Account</a>
           <a href="" style={linkStyle}>Returns Centre</a>
           <a href="" style={linkStyle}>Recalls and Product Safety Alerts</a>

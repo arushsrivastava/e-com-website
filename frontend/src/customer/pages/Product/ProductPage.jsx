@@ -81,7 +81,7 @@ const filters = [
   },
 ];
 
-export default function Example() {
+export default function ProductPage() {
   const location = useLocation();
   const navigate = useNavigate();
   const searchParams = new URLSearchParams(location.search);
@@ -239,9 +239,9 @@ export default function Example() {
           </aside>
 
           {/* Products */}
-          <div className="lg:col-span-4 flex flex-wrap gap-4">
+          <div className="lg:col-span-4 flex flex-wrap gap-2 justify-center">
             {kurtaPage1.map((item) => (
-              <ProductCard brand={item.brand} image={item.image} title={item.title} selling_price={item.selling_price} price={item.price} discount={item.disscount} key={item.id} />
+              <ProductCard brand={item.brand} image={item.image} title={item.title} selling_price={item.selling_price} price={item.price} discount={item.disscount} key={item.id} id={item.id} />
             ))}
           </div>
         </div>

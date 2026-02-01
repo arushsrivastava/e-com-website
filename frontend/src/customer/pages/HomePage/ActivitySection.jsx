@@ -3,7 +3,7 @@ import BasicCard from '../../components/Product/Card'
 
 const ActivitySection = () => {
   return (
-    <div className='flex flex-row flex-wrap gap-y-2 gap-x-2 bg-gray-200 py-3 px-4 justify-between'>
+    <div className='flex flex-row flex-wrap gap-y-2 gap-x-2 bg-gray-200 py-3 px-4 lg:justify-between justify-center'>
         <BasicCard 
             title= "Deals inspired by your recent history"
         />

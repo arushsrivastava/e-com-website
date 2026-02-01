@@ -28,7 +28,7 @@ const SecondarySlider = ({items, title}) => {
           className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory px-8"
         >
           {items.map((item) => (
-            <div key={item.id} className="snap-start shrink-0 w-49 text-center justify-center items-center">
+            <div key={item.id} className="snap-start shrink-0 w-[150px] text-center justify-center items-center">
                 <img src={item.image} className="object-contain" />
                 <p className="mb-0">XYZ</p>
             </div>

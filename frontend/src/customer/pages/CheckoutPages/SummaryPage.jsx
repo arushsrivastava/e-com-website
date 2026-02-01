@@ -49,7 +49,7 @@ const orders = [
       image: "/prodImg.png",
       description:
         "This contemporary wristwatch has a clean, minimalist look and high quality components.",
-      statusIndex: 2,
+      statusIndex: 1,
       expectedDate: "March 23, 2021",
     },
 

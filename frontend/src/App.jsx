@@ -8,13 +8,15 @@ import AdressesPage from "./customer/pages/CheckoutPages/AdressesPage";
 import MainCheckoutPage from "./customer/pages/CheckoutPages/MainCheckoutPage";
 import MainOrderHistoryPage from "./customer/pages/OrderHistory/MainOrderHistoryPage";
 import OrderHistoryDetails from "./customer/pages/OrderHistory/OrderHistoryDetails";
+import { Route, Routes } from "react-router";
+import CustomerRoutes from "./routes/CustomerRoutes";
 
 function App() {
   return (
     <div className="app">
-      <div>
-        <MainOrderHistoryPage />
-      </div>
+      <Routes>
+        <Route path="/*" element={<CustomerRoutes />} />
+      </Routes>
     </div>
   );
 }

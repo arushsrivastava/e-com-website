@@ -1,4 +1,6 @@
 import { StarIcon } from "@heroicons/react/20/solid";
+import { useNavigate } from "react-router";
+import React from "react";
 
 const product = {
   name: "Basic Tee 6-Pack",
@@ -59,6 +61,8 @@ function classNames(...classes) {
 }
 
 export default function ProductDetails() {
+  const [addToCartStatus, setAddToCartStatus] = React.useState(false);
+  const navigate = useNavigate();
   return (
     <div className="bg-white">
       <div className="pt-6">
@@ -185,12 +189,23 @@ export default function ProductDetails() {
               </div>
 
               {/* CTA */}
-              <button
+              <div className="flex gap-4"><button
                 type="submit"
                 className="w-full rounded-xl bg-indigo-600 py-4 text-white font-semibold shadow-md transition hover:bg-indigo-700 hover:shadow-lg"
+                  onClick={() => setAddToCartStatus(true)}
               >
                 Add to bag
               </button>
+
+             { addToCartStatus && <button
+                type="submit"
+                className="w-full rounded-xl bg-yellow-400 py-4 text-white font-semibold shadow-md transition hover:bg-yellow-500 hover:shadow-lg"
+                  onClick={() => navigate("/checkout")}
+              >
+                View Cart
+              </button>}
+              </div>
+              
             </form>
 
             {/* DESCRIPTION */}

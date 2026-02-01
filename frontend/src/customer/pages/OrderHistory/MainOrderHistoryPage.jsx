@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 const orders = [
   {
@@ -43,6 +44,7 @@ const orders = [
 ];
 
 const MainOrderHistoryPage = () => {
+  const navigate = useNavigate(); 
   return (
     <>
       <div className="max-w-5xl mx-auto px-4 py-10">
@@ -80,7 +82,8 @@ const MainOrderHistoryPage = () => {
                 </div>
 
                 <div className="flex gap-3">
-                  <button className="rounded-md border px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-50">
+                  <button className="rounded-md border px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-50"
+                  onClick={()=>navigate(`/account/orders/${order.id}`)}>
                     View Order
                   </button>
                   <button className="rounded-md border px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-50">
